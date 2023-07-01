@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const loyaltyProgramsSchema = new mongoose.Schema({
-    _id: Number,
+    _id: String,
     programID:String,
     programName:String,
     currencyName:String,
@@ -12,6 +12,6 @@ const loyaltyProgramsSchema = new mongoose.Schema({
 
 });
 
-const LoyaltyPrograms = mongoose.model('LoyaltyPrograms', loyaltyProgramsSchema);
+const LoyaltyPrograms = mongoose.model('loyaltyprograms', loyaltyProgramsSchema);
 
 module.exports = LoyaltyPrograms;
